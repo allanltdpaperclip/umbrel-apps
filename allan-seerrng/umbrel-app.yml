@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: allan-seerrng
+category: media
+name: SeerrNG
+version: "3.58.0"
+tagline: Requests for movies, shows, music, ebooks and audiobooks
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/seerr.svg
+description: >-
+  SeerrNG is a Seerr fork that adds music (Lidarr), ebooks and audiobooks (Bookshelf/Readarr) to movie and TV requests.
+
+  Addresses on Umbrel: Jellyfin jellyfin_server_1:8096, Radarr radarr_server_1:7878, Sonarr sonarr_server_1:8989, Lidarr lidarr_server_1:8686, Bookshelf allan-bookshelf_server_1:8787.
+developer: SeerrNG
+website: https://github.com/snapetech/seerrng
+repo: https://github.com/snapetech/seerrng
+support: https://github.com/snapetech/seerrng/issues
+port: 5058
+gallery: []
+dependencies: []
+permissions:
+  - STORAGE_DOWNLOADS
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+submitter: allan.ltd

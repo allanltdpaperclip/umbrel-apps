@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: allan-audiobookrequest
+category: media
+name: AudioBookRequest
+version: "1.10.7"
+tagline: Audiobook requests and wishlists
+icon: https://raw.githubusercontent.com/markbeep/AudioBookRequest/main/media/AudioBookRequestIcon.png
+description: >-
+  AudioBookRequest is an Overseerr-style request app for audiobooks. Search uses the Audible catalogue; downloads go through Prowlarr (prowlarr_server_1:9696) to its download client. Pair with Audiobookshelf (audiobookshelf_web_1:80).
+
+  It has its own login, so Umbrel's login screen is not added in front of it.
+developer: AudioBookRequest
+website: https://github.com/markbeep/AudioBookRequest
+repo: https://github.com/markbeep/AudioBookRequest
+support: https://github.com/markbeep/AudioBookRequest/issues
+port: 8000
+gallery: []
+dependencies: []
+permissions:
+  - STORAGE_DOWNLOADS
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+submitter: allan.ltd

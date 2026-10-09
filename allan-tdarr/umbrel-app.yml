@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: allan-tdarr
+category: media
+name: Tdarr
+version: "2.95.01"
+tagline: Distributed transcoding to shrink your media library
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/tdarr.svg
+description: >-
+  Tdarr server only (no internal node), so the Pi does not encode. Run a Tdarr Node of the same version on another machine and point it at http://<umbrel-ip>:8266.
+
+  Media: Umbrel Downloads at /media. Nodes need the same files through a network share plus a path translator (/media → their mount).
+developer: Tdarr
+website: https://tdarr.io
+repo: https://github.com/HaveAGitGat/Tdarr
+support: https://github.com/HaveAGitGat/Tdarr/issues
+port: 8265
+gallery: []
+dependencies: []
+permissions:
+  - STORAGE_DOWNLOADS
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+submitter: allan.ltd
