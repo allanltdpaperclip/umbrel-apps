@@ -2,11 +2,11 @@ manifestVersion: 1
 id: allan-bookshelf
 category: media
 name: BookshelfNG
-version: "0.4.21.65"
+version: "0.4.21.65-1"
 tagline: Ebook and audiobook collection manager (Readarr fork)
 icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/readarr.svg
 description: >-
-  BookshelfNG is a maintained Readarr fork for ebooks and audiobooks. Metadata comes from Hardcover through the hosted rreading-glasses endpoint (no token needed).
+  BookshelfNG is a maintained Readarr fork for ebooks and audiobooks. Metadata comes from Hardcover directly (native mode). Paste a free Hardcover API token (hardcover.app/account/api) in Settings → Metadata once.
 
   Root folders: /downloads/books and /downloads/audiobooks. Download client: Transmission at transmission_server_1:9091. Link it to Prowlarr as a Readarr app at http://allan-bookshelf_server_1:8787.
 developer: BookshelfNG
