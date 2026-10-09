@@ -1,0 +1,101 @@
+[
+ {
+  "guid": "5e87cc92-571a-4d8d-8d98-d2d4147f9f90",
+  "name": "File Transformation",
+  "overview": null,
+  "description": "Adds support for plugins to change jellyfin-web content without actually modifying the files directly but intercepts the requests for the served data.",
+  "owner": "IAmParadox27",
+  "category": "General",
+  "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-file-transformation/main/src/logo.png",
+  "versions": [
+   {
+    "version": "3.0.1.0",
+    "changelog": "Add support for 12.1",
+    "targetAbi": "12.0.0.0",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/3.0.1.0/Release-12.0.0.zip",
+    "checksum": "9785DDF88CE9CC593BACDBD7FA8E7B79",
+    "timestamp": "2026-09-08T09:02:53",
+    "dependencies": [
+     "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+    ]
+   },
+   {
+    "version": "3.0.1.0",
+    "changelog": "Add support for 12.1",
+    "targetAbi": "12.1.0.0",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/3.0.1.0/Release-12.1.0.zip",
+    "checksum": "1451642C8DC6F036CB00AA703A9F0834",
+    "timestamp": "2026-09-08T09:02:53",
+    "dependencies": [
+     "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+    ]
+   }
+  ]
+ },
+ {
+  "guid": "5b6550fa-a014-4f4c-8a2c-59a43680ac6d",
+  "name": "Plugin Pages",
+  "overview": null,
+  "description": "Adds support for plugins to define their own user settings pages, rather than just admin sided.",
+  "owner": "IAmParadox27",
+  "category": "General",
+  "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-pages/main/src/logo.png",
+  "versions": [
+   {
+    "version": "3.0.1.0",
+    "changelog": "## \ud83e\udeb2 Bug Fixes\r\n\r\n* Fixed injected menu items not closing the Jellyfin user-menu popover after navigation (PR #20, @n00bcodr).\r\n* Fixed Plugin Pages injection sometimes failing on clients where jQuery had not finished loading, including affected Android clients (PR #20, @n00bcodr).\r\n* Added cache-busting to the injected script so clients reliably receive updated versions.\r\n\r\n## \u26a0\ufe0f Compatibility\r\n\r\n* Dropped support for Jellyfin 10.11 releases prior to 10.11.11. Jellyfin 10.11.11 remains supported.\r\n\r\n### Contributors\r\n\r\n* n00bcodr",
+    "targetAbi": "12.0.0.0",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.1.0/Release-12.0.0.zip",
+    "checksum": "17025353F3B2EAE3149A89C1C4E1061A",
+    "timestamp": "2026-09-15T10:18:14",
+    "dependencies": [
+     "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+    ]
+   },
+   {
+    "version": "3.0.1.0",
+    "changelog": "## \ud83e\udeb2 Bug Fixes\r\n\r\n* Fixed injected menu items not closing the Jellyfin user-menu popover after navigation (PR #20, @n00bcodr).\r\n* Fixed Plugin Pages injection sometimes failing on clients where jQuery had not finished loading, including affected Android clients (PR #20, @n00bcodr).\r\n* Added cache-busting to the injected script so clients reliably receive updated versions.\r\n\r\n## \u26a0\ufe0f Compatibility\r\n\r\n* Dropped support for Jellyfin 10.11 releases prior to 10.11.11. Jellyfin 10.11.11 remains supported.\r\n\r\n### Contributors\r\n\r\n* n00bcodr",
+    "targetAbi": "12.1.0.0",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.1.0/Release-12.1.0.zip",
+    "checksum": "F74C03CED8C78112893E0D31EF4B649E",
+    "timestamp": "2026-09-15T10:18:14",
+    "dependencies": [
+     "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+    ]
+   }
+  ]
+ },
+ {
+  "guid": "b8298e01-2697-407a-b44d-aa8dc795e850",
+  "name": "Home Screen Sections",
+  "overview": null,
+  "description": "Adds support for server provided home screen sections",
+  "owner": "IAmParadox27",
+  "category": "General",
+  "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-home-sections/main/src/logo.png",
+  "versions": [
+   {
+    "version": "3.0.2.0",
+    "changelog": "Fixed issue caused by 3.0.1.0 on JF 12.1. \r\n\r\nThat release has been removed - this is identical to 3.0.1.0 except with this fix",
+    "targetAbi": "12.0.0.0",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.2.0/Release-12.0.0.zip",
+    "checksum": "CF4BE86E08365AC8D96CBA339F2523E1",
+    "timestamp": "2026-09-15T11:27:53",
+    "dependencies": [
+     "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+    ]
+   },
+   {
+    "version": "3.0.2.0",
+    "changelog": "Fixed issue caused by 3.0.1.0 on JF 12.1. \r\n\r\nThat release has been removed - this is identical to 3.0.1.0 except with this fix",
+    "targetAbi": "12.1.0.0",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.2.0/Release-12.1.0.zip",
+    "checksum": "C71A9BBF5456A377F14D9653CA41DB99",
+    "timestamp": "2026-09-15T11:27:53",
+    "dependencies": [
+     "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+    ]
+   }
+  ]
+ }
+]
