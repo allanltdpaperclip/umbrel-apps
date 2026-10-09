@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: allan-cleanuparr
+category: media
+name: Cleanuparr
+version: "2.10.9"
+tagline: Replaces stuck and stalled downloads automatically
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/cleanuparr.png
+description: >-
+  Cleanuparr watches Transmission together with Radarr, Sonarr and Lidarr. When a download stalls (no progress), stays slow, or fails to import, it removes it, blocklists that release, and asks the *arr app to search for the next best one.
+
+  Addresses on Umbrel: Transmission transmission_server_1:9091 (URL base /transmission/), Radarr radarr_server_1:7878, Sonarr sonarr_server_1:8989, Lidarr lidarr_server_1:8686.
+developer: Cleanuparr
+website: https://cleanuparr.github.io/Cleanuparr/
+repo: https://github.com/Cleanuparr/Cleanuparr
+support: https://github.com/Cleanuparr/Cleanuparr/issues
+port: 11011
+gallery: []
+dependencies: []
+permissions:
+  - STORAGE_DOWNLOADS
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+submitter: allan.ltd
