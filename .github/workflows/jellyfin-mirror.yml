@@ -1,0 +1,40 @@
+name: Refresh Jellyfin plugin mirror
+
+# Copies the IAmParadox27 plugin index (Home Screen Sections + deps) daily, because the Pi's
+# Jellyfin cannot fetch iamparadox.dev directly. Downloads stay on the official GitHub releases.
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch and filter manifest
+        run: |
+          curl -sfL -A "curl/8" --retry 3 https://www.iamparadox.dev/jellyfin/plugins/manifest.json -o /tmp/src.json
+          python3 - <<'EOF'
+          import json
+          keep = ("Home Screen Sections", "File Transformation", "Plugin Pages")
+          src = json.load(open("/tmp/src.json"))
+          out = []
+          for p in src:
+              if p["name"] in keep:
+                  vs = [v for v in p["versions"] if str(v.get("targetAbi", "")).startswith("12.")]
+                  if vs:
+                      q = dict(p); q["versions"] = vs[:4]; out.append(q)
+          assert len(out) == len(keep), f"missing plugins: {[p['name'] for p in out]}"
+          json.dump(out, open("jellyfin/manifest.json", "w"), indent=1)
+          EOF
+      - name: Commit if changed
+        run: |
+          if git diff --quiet; then echo "no change"; exit 0; fi
+          git config user.name "mirror-bot"
+          git config user.email "mirror-bot@users.noreply.github.com"
+          git commit -am "Refresh Jellyfin plugin mirror"
+          git push
