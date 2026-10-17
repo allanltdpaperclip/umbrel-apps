@@ -1,0 +1,2 @@
+allan-transmission-vpn/data/secrets/*
+!allan-transmission-vpn/data/secrets/.gitkeep

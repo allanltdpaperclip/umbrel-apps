@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: allan-transmission-vpn
+category: media
+name: Transmission VPN
+version: "4.1.3-gluetun3.41.3"
+tagline: Transmission that only talks to the internet through PIA, with an open port
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/transmission.png
+description: >-
+  Transmission 4.1.3 running inside a Gluetun VPN container (Private Internet Access, Brazil, OpenVPN).
+  All torrent traffic leaves through the VPN; if the tunnel drops, Transmission has no route out (kill switch).
+  Gluetun asks PIA for a forwarded port and sets it as Transmission's peer port, so peers can connect in even behind ISP CGNAT.
+
+  Before first start, put the PIA username and password in the files data/secrets/openvpn_user and data/secrets/openvpn_password of this app's data folder.
+
+  Address for Sonarr/Radarr/Lidarr: allan-transmission-vpn_gluetun_1:9091, URL base /transmission/.
+developer: Transmission / qdm12
+website: https://transmissionbt.com
+repo: https://github.com/qdm12/gluetun
+support: https://github.com/qdm12/gluetun/issues
+port: 9093
+gallery: []
+dependencies: []
+permissions:
+  - STORAGE_DOWNLOADS
+path: "/transmission/web/"
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+submitter: allan.ltd

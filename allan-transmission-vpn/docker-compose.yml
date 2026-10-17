@@ -1,0 +1,46 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: allan-transmission-vpn_gluetun_1
+      APP_PORT: 9091
+
+  gluetun:
+    image: qmcgaw/gluetun:v3.41.3@sha256:fa19cc76b2af13d57a8d3dc3066f2ada061b1c761b8aecf989b3877c0486e027
+    restart: on-failure
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    environment:
+      - TZ=America/Sao_Paulo
+      - VPN_SERVICE_PROVIDER=private internet access
+      - VPN_TYPE=openvpn
+      - SERVER_REGIONS=Brazil
+      - VPN_PORT_FORWARDING=on
+      - VPN_PORT_FORWARDING_STATUS_FILE=/gluetun/forwarded_port
+      - VPN_PORT_FORWARDING_UP_COMMAND=/bin/sh /gluetun/pf-up.sh {{PORTS}}
+      - FIREWALL_INPUT_PORTS=9091
+      # Credentials: files user/password in ${APP_DATA_DIR}/data/secrets (never in git)
+      - OPENVPN_USER_SECRETFILE=/run/secrets/openvpn_user
+      - OPENVPN_PASSWORD_SECRETFILE=/run/secrets/openvpn_password
+    volumes:
+      - ${APP_DATA_DIR}/data/gluetun:/gluetun
+      - ${APP_DATA_DIR}/data/secrets:/run/secrets:ro
+
+  server:
+    image: linuxserver/transmission:4.1.3@sha256:30d59b253993df8c7634fe03cbb33e22324d00d200ff3d3cc30e6184fa55f96b
+    restart: on-failure
+    network_mode: "service:gluetun"
+    depends_on:
+      - gluetun
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${APP_DATA_DIR}/data/custom-init:/custom-cont-init.d:ro
+      - ${APP_DATA_DIR}/data/gluetun:/pf:ro
+      - ${UMBREL_ROOT}/home/Downloads:/downloads
