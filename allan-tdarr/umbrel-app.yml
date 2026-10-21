@@ -2,13 +2,13 @@ manifestVersion: 1
 id: allan-tdarr
 category: media
 name: Tdarr
-version: "2.95.01"
-tagline: Distributed transcoding to shrink your media library
+version: "2.95.01-1"
+tagline: Shrinks heavy media on the Pi itself (slow, no other device)
 icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/tdarr.svg
 description: >-
-  Tdarr server only (no internal node), so the Pi does not encode. Run a Tdarr Node of the same version on another machine and point it at http://<umbrel-ip>:8266.
+  Tdarr server with its internal node. Encodes on the Pi CPU with libx265, capped at 2 cores and 1.5 GB so Jellyfin stays responsive.
 
-  Media: Umbrel Downloads at /media. Nodes need the same files through a network share plus a path translator (/media → their mount).
+  Media: Umbrel Downloads at /media.
 developer: Tdarr
 website: https://tdarr.io
 repo: https://github.com/HaveAGitGat/Tdarr
