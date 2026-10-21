@@ -12,7 +12,7 @@ description: >-
 
   Before first start, put the PIA username and password in the files data/secrets/openvpn_user and data/secrets/openvpn_password of this app's data folder.
 
-  Address for Sonarr/Radarr/Lidarr: allan-transmission-vpn_gluetun_1:9091, URL base /transmission/.
+  Replaces the official Transmission as the download client dependency of Sonarr, Radarr and Prowlarr. Address for them: allan-transmission-vpn_gluetun_1:9091, URL base /transmission/.
 developer: Transmission / qdm12
 website: https://transmissionbt.com
 repo: https://github.com/qdm12/gluetun
@@ -20,6 +20,8 @@ support: https://github.com/qdm12/gluetun/issues
 port: 9093
 gallery: []
 dependencies: []
+implements:
+  - transmission
 permissions:
   - STORAGE_DOWNLOADS
 path: "/transmission/web/"
