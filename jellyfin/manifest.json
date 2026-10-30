@@ -2,7 +2,7 @@
  {
   "guid": "5e87cc92-571a-4d8d-8d98-d2d4147f9f90",
   "name": "File Transformation",
-  "overview": null,
+  "overview": "Adds support for plugins to change jellyfin-web content without actually modifying the files directly but intercepts the requests for the served data.",
   "description": "Adds support for plugins to change jellyfin-web content without actually modifying the files directly but intercepts the requests for the served data.",
   "owner": "IAmParadox27",
   "category": "General",
@@ -57,7 +57,7 @@
  {
   "guid": "5b6550fa-a014-4f4c-8a2c-59a43680ac6d",
   "name": "Plugin Pages",
-  "overview": null,
+  "overview": "Adds support for plugins to define their own user settings pages, rather than just admin sided.",
   "description": "Adds support for plugins to define their own user settings pages, rather than just admin sided.",
   "owner": "IAmParadox27",
   "category": "General",
@@ -112,7 +112,7 @@
  {
   "guid": "b8298e01-2697-407a-b44d-aa8dc795e850",
   "name": "Home Screen Sections",
-  "overview": null,
+  "overview": "Adds support for server provided home screen sections",
   "description": "Adds support for server provided home screen sections",
   "owner": "IAmParadox27",
   "category": "General",
