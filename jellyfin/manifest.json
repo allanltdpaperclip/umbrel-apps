@@ -64,45 +64,45 @@
   "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-pages/main/src/logo.png",
   "versions": [
    {
-    "version": "3.0.2.0",
-    "changelog": "Added support for 12.2",
+    "version": "3.0.3.0",
+    "changelog": "Added support for 12.3 and 12.4",
     "targetAbi": "12.0.0.0",
-    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.2.0/Release-12.0.0.zip",
-    "checksum": "0A98C77804E675D1FB2820D02EB90C9E",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.3.0/Release-12.0.0.zip",
+    "checksum": "03DAE7766BDB2C94AF4E5A5CEB044216",
     "timestamp": "2026-09-16T09:19:40",
     "dependencies": [
      "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
     ]
    },
    {
-    "version": "3.0.2.0",
-    "changelog": "Added support for 12.2",
+    "version": "3.0.3.0",
+    "changelog": "Added support for 12.3 and 12.4",
     "targetAbi": "12.1.0.0",
-    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.2.0/Release-12.1.0.zip",
-    "checksum": "98AA1E1D3009FB81525C09103A702B9E",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.3.0/Release-12.1.0.zip",
+    "checksum": "C2D3337BA91559712EE03B0E60D40437",
     "timestamp": "2026-09-16T09:19:40",
     "dependencies": [
      "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
     ]
    },
    {
-    "version": "3.0.2.0",
-    "changelog": "Added support for 12.2",
+    "version": "3.0.3.0",
+    "changelog": "Added support for 12.3 and 12.4",
     "targetAbi": "12.2.0.0",
-    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.2.0/Release-12.2.0.zip",
-    "checksum": "4F839EFBD6897817BCAF1DD19369BF3B",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.3.0/Release-12.2.0.zip",
+    "checksum": "1DC53B3E1BC7CB87A570EC28BE91B560",
     "timestamp": "2026-09-16T09:19:40",
     "dependencies": [
      "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
     ]
    },
    {
-    "version": "3.0.1.0",
-    "changelog": "## \ud83e\udeb2 Bug Fixes\r\n\r\n* Fixed injected menu items not closing the Jellyfin user-menu popover after navigation (PR #20, @n00bcodr).\r\n* Fixed Plugin Pages injection sometimes failing on clients where jQuery had not finished loading, including affected Android clients (PR #20, @n00bcodr).\r\n* Added cache-busting to the injected script so clients reliably receive updated versions.\r\n\r\n## \u26a0\ufe0f Compatibility\r\n\r\n* Dropped support for Jellyfin 10.11 releases prior to 10.11.11. Jellyfin 10.11.11 remains supported.\r\n\r\n### Contributors\r\n\r\n* n00bcodr",
-    "targetAbi": "12.0.0.0",
-    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.1.0/Release-12.0.0.zip",
-    "checksum": "17025353F3B2EAE3149A89C1C4E1061A",
-    "timestamp": "2026-09-15T10:18:14",
+    "version": "3.0.3.0",
+    "changelog": "Added support for 12.3 and 12.4",
+    "targetAbi": "12.3.0.0",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.3.0/Release-12.3.0.zip",
+    "checksum": "AAA9C6DBF6DE7B1D703F74AB4FED59E4",
+    "timestamp": "2026-09-16T09:19:40",
     "dependencies": [
      "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
     ]
@@ -119,45 +119,45 @@
   "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-home-sections/main/src/logo.png",
   "versions": [
    {
-    "version": "3.0.3.0",
-    "changelog": "\u2728 New Features\r\n\r\n* Added Studio / Network, Decade, Hidden Gems and Finish These Collections sections, and enabled the previously developed Starring and Directed By sections (PR #292, @n00bcodr).\r\n* Added per-section previews to the admin configuration page, allowing section results to be previewed before saving (PR #288, @n00bcodr).\r\n* Added a new Add/Remove section workflow to make managing enabled sections easier (PR #288, @n00bcodr).\r\n\r\n\ud83d\udee0\ufe0f Improvements\r\n\r\n* Reworked section ordering in the admin configuration page with drag-and-drop support, including support for moving groups of sections that share the same order (PR #288, @n00bcodr).\r\n* Added section information popovers using the new admin descriptions (PR #288, @n00bcodr).\r\n* Improved section naming fallbacks and fixed missing Genre section localisation in the admin interface (PR #288, @n00bcodr).\r\n* Escaped section metadata when rendering the home screen and settings interface so titles and names containing markup are displayed safely as text (PR #304, @4eh5xitv6787h645ebv).\r\n\r\n\ud83e\udeb2 Bug Fixes\r\n\r\n* Fixed #297 where users on Jellyfin 12 could receive items from libraries they did not have access to in Latest Movies, Latest Shows, Recently Added and Genre sections (PR #301, @4eh5xitv6787h645ebv).\r\n* Fixed #298 where authenticated users could access another user\u2019s Home Screen Sections data by supplying that user\u2019s ID. User-scoped endpoints are now bound to the authenticated user (PR #302, @4eh5xitv6787h645ebv).\r\n* Fixed #298 by restricting section registration to administrators and limiting registered section result endpoints to the originating server (PR #303, @4eh5xitv6787h645ebv).\r\n\r\n\ud83c\udf10 Translations\r\n\r\n* Completed missing Spanish and Catalan translations (PR #293, @GospelBG).\r\n* Added Greek translations (PR #299, @KaliDarkzy).\r\n\r\n\u26a0\ufe0f Compatibility\r\n\r\n* Added support for Jellyfin 12.2.\r\n* Jellyfin 10.11.11 remains supported.\r\n\r\nContributors\r\n\r\n* n00bcodr\r\n* GospelBG\r\n* KaliDarkzy\r\n* 4eh5xitv6787h645ebv",
+    "version": "3.0.4.0",
+    "changelog": "Added support for 12.3 and 12.4",
     "targetAbi": "12.0.0.0",
-    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.3.0/Release-12.0.0.zip",
-    "checksum": "E3A8BF4B89F84704D8BF5DB49EEAB8DA",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.4.0/Release-12.0.0.zip",
+    "checksum": "EADB280432DE2AAF40635850FB897F91",
     "timestamp": "2026-10-05T21:33:44",
     "dependencies": [
      "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
     ]
    },
    {
-    "version": "3.0.3.0",
-    "changelog": "\u2728 New Features\r\n\r\n* Added Studio / Network, Decade, Hidden Gems and Finish These Collections sections, and enabled the previously developed Starring and Directed By sections (PR #292, @n00bcodr).\r\n* Added per-section previews to the admin configuration page, allowing section results to be previewed before saving (PR #288, @n00bcodr).\r\n* Added a new Add/Remove section workflow to make managing enabled sections easier (PR #288, @n00bcodr).\r\n\r\n\ud83d\udee0\ufe0f Improvements\r\n\r\n* Reworked section ordering in the admin configuration page with drag-and-drop support, including support for moving groups of sections that share the same order (PR #288, @n00bcodr).\r\n* Added section information popovers using the new admin descriptions (PR #288, @n00bcodr).\r\n* Improved section naming fallbacks and fixed missing Genre section localisation in the admin interface (PR #288, @n00bcodr).\r\n* Escaped section metadata when rendering the home screen and settings interface so titles and names containing markup are displayed safely as text (PR #304, @4eh5xitv6787h645ebv).\r\n\r\n\ud83e\udeb2 Bug Fixes\r\n\r\n* Fixed #297 where users on Jellyfin 12 could receive items from libraries they did not have access to in Latest Movies, Latest Shows, Recently Added and Genre sections (PR #301, @4eh5xitv6787h645ebv).\r\n* Fixed #298 where authenticated users could access another user\u2019s Home Screen Sections data by supplying that user\u2019s ID. User-scoped endpoints are now bound to the authenticated user (PR #302, @4eh5xitv6787h645ebv).\r\n* Fixed #298 by restricting section registration to administrators and limiting registered section result endpoints to the originating server (PR #303, @4eh5xitv6787h645ebv).\r\n\r\n\ud83c\udf10 Translations\r\n\r\n* Completed missing Spanish and Catalan translations (PR #293, @GospelBG).\r\n* Added Greek translations (PR #299, @KaliDarkzy).\r\n\r\n\u26a0\ufe0f Compatibility\r\n\r\n* Added support for Jellyfin 12.2.\r\n* Jellyfin 10.11.11 remains supported.\r\n\r\nContributors\r\n\r\n* n00bcodr\r\n* GospelBG\r\n* KaliDarkzy\r\n* 4eh5xitv6787h645ebv",
+    "version": "3.0.4.0",
+    "changelog": "Added support for 12.3 and 12.4",
     "targetAbi": "12.1.0.0",
-    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.3.0/Release-12.1.0.zip",
-    "checksum": "06690CAD9853BE11C52C1BA9DF20A918",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.4.0/Release-12.1.0.zip",
+    "checksum": "A665C11454406C352DAD3943A7B6E99B",
     "timestamp": "2026-10-05T21:33:44",
     "dependencies": [
      "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
     ]
    },
    {
-    "version": "3.0.3.0",
-    "changelog": "\u2728 New Features\r\n\r\n* Added Studio / Network, Decade, Hidden Gems and Finish These Collections sections, and enabled the previously developed Starring and Directed By sections (PR #292, @n00bcodr).\r\n* Added per-section previews to the admin configuration page, allowing section results to be previewed before saving (PR #288, @n00bcodr).\r\n* Added a new Add/Remove section workflow to make managing enabled sections easier (PR #288, @n00bcodr).\r\n\r\n\ud83d\udee0\ufe0f Improvements\r\n\r\n* Reworked section ordering in the admin configuration page with drag-and-drop support, including support for moving groups of sections that share the same order (PR #288, @n00bcodr).\r\n* Added section information popovers using the new admin descriptions (PR #288, @n00bcodr).\r\n* Improved section naming fallbacks and fixed missing Genre section localisation in the admin interface (PR #288, @n00bcodr).\r\n* Escaped section metadata when rendering the home screen and settings interface so titles and names containing markup are displayed safely as text (PR #304, @4eh5xitv6787h645ebv).\r\n\r\n\ud83e\udeb2 Bug Fixes\r\n\r\n* Fixed #297 where users on Jellyfin 12 could receive items from libraries they did not have access to in Latest Movies, Latest Shows, Recently Added and Genre sections (PR #301, @4eh5xitv6787h645ebv).\r\n* Fixed #298 where authenticated users could access another user\u2019s Home Screen Sections data by supplying that user\u2019s ID. User-scoped endpoints are now bound to the authenticated user (PR #302, @4eh5xitv6787h645ebv).\r\n* Fixed #298 by restricting section registration to administrators and limiting registered section result endpoints to the originating server (PR #303, @4eh5xitv6787h645ebv).\r\n\r\n\ud83c\udf10 Translations\r\n\r\n* Completed missing Spanish and Catalan translations (PR #293, @GospelBG).\r\n* Added Greek translations (PR #299, @KaliDarkzy).\r\n\r\n\u26a0\ufe0f Compatibility\r\n\r\n* Added support for Jellyfin 12.2.\r\n* Jellyfin 10.11.11 remains supported.\r\n\r\nContributors\r\n\r\n* n00bcodr\r\n* GospelBG\r\n* KaliDarkzy\r\n* 4eh5xitv6787h645ebv",
+    "version": "3.0.4.0",
+    "changelog": "Added support for 12.3 and 12.4",
     "targetAbi": "12.2.0.0",
-    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.3.0/Release-12.2.0.zip",
-    "checksum": "95FE9BE2D988C794288E5B7EF2BC916D",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.4.0/Release-12.2.0.zip",
+    "checksum": "FA156182859FD840CCC3030D53B40A71",
     "timestamp": "2026-10-05T21:33:44",
     "dependencies": [
      "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
     ]
    },
    {
-    "version": "3.0.2.0",
-    "changelog": "Fixed issue caused by 3.0.1.0 on JF 12.1. \r\n\r\nThat release has been removed - this is identical to 3.0.1.0 except with this fix",
-    "targetAbi": "12.0.0.0",
-    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.2.0/Release-12.0.0.zip",
-    "checksum": "CF4BE86E08365AC8D96CBA339F2523E1",
-    "timestamp": "2026-09-15T11:27:53",
+    "version": "3.0.4.0",
+    "changelog": "Added support for 12.3 and 12.4",
+    "targetAbi": "12.3.0.0",
+    "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.4.0/Release-12.3.0.zip",
+    "checksum": "82B616186C80FAC406AC060852E46E44",
+    "timestamp": "2026-10-05T21:33:44",
     "dependencies": [
      "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
     ]
